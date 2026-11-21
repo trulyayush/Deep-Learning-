@@ -1,0 +1,167 @@
+{
+  "schema_version": "1.0.0",
+  "reviewed_at": "2026-11-21T18:30:00Z",
+  "redistribution_policy": "Do not redistribute third-party datasets without explicit upstream permission. Keep original archives unmodified.",
+  "commercial_eligible_after_review": [
+    {
+      "dataset_id": "core50",
+      "licence": "CC BY 4.0",
+      "notes": "Permits commercial use with attribution under CC BY 4.0; verify contributor notices before release."
+    },
+    {
+      "dataset_id": "tofu",
+      "licence": "MIT",
+      "notes": "Synthetic fictitious author QA dataset under MIT licence; verify current Hugging Face card terms prior to commercial deployment."
+    },
+    {
+      "dataset_id": "asvspoof2021",
+      "licence": "ASVspoof 2021 Evaluation Terms / ODC-By (check per-subset VCTK/source terms)",
+      "notes": "Review underlying source corpus licence (e.g., VCTK CC BY 4.0) before commercial model weights release."
+    },
+    {
+      "dataset_id": "cifar10",
+      "licence": "CIFAR / MIT-style research attribution (underlying 80M Tiny Images provenance review required)",
+      "notes": "Suitable for internal benchmarking; review image provenance before shipping weights commercially."
+    },
+    {
+      "dataset_id": "cifar100",
+      "licence": "CIFAR / research attribution (underlying 80M Tiny Images provenance review required)",
+      "notes": "Primary internal continual-learning/unlearning benchmark; review image provenance before commercial weight distribution."
+    }
+  ],
+  "non_commercial_or_restricted": [
+    {
+      "dataset_id": "av_deepfake1m",
+      "licence": "CC BY-NC 4.0",
+      "restriction": "Non-commercial strictly enforced; gated HF approval required."
+    },
+    {
+      "dataset_id": "fakeavceleb",
+      "licence": "Custom Research-Only + Rights-Clearing Limitations",
+      "restriction": "Access approval required; authors explicitly state rights-clearing limitations and prohibit commercial redistribution."
+    },
+    {
+      "dataset_id": "faceforensics",
+      "licence": "FaceForensics++ Custom Terms of Use",
+      "restriction": "Research-only access form and maintainer download script required."
+    },
+    {
+      "dataset_id": "dfdc",
+      "licence": "DFDC Competition / Meta Research Usage Agreement",
+      "restriction": "Subject to DFDC official competition/dataset usage terms and Kaggle/Meta agreement."
+    },
+    {
+      "dataset_id": "meld",
+      "licence": "GPL-3.0 (annotations/code) + Third-Party TV Broadcast Media Rights",
+      "restriction": "Underlying Friends TV clips remain subject to third-party copyright; do not treat as commercial-cleared media."
+    },
+    {
+      "dataset_id": "ravdess",
+      "licence": "CC BY-NC-SA 4.0",
+      "restriction": "Non-commercial ShareAlike; separate commercial licensing may be requested from authors."
+    },
+    {
+      "dataset_id": "crema_d",
+      "licence": "ODbL 1.0 (database) / DbCL 1.0 (individual contents)",
+      "restriction": "Access form + share-alike/attribution database obligations apply."
+    },
+    {
+      "dataset_id": "mu_bench",
+      "licence": "Composite Benchmark (inherits underlying dataset licences per task)",
+      "restriction": "Check each task's underlying licence (CIFAR-100, IMDB, DDI-2013, NLVR2, Speech Commands, UCF101, SAMSum) independently."
+    }
+  ],
+  "licences": {
+    "av_deepfake1m": {
+      "spdx_or_name": "CC BY-NC 4.0",
+      "commercial_allowed": false,
+      "gated": true,
+      "attribution_required": true,
+      "redistribution_allowed": false
+    },
+    "fakeavceleb": {
+      "spdx_or_name": "Custom Research Licence (Rights-Cleared Caveats)",
+      "commercial_allowed": false,
+      "gated": true,
+      "attribution_required": true,
+      "redistribution_allowed": false
+    },
+    "faceforensics": {
+      "spdx_or_name": "FaceForensics++ Terms of Use",
+      "commercial_allowed": false,
+      "gated": true,
+      "attribution_required": true,
+      "redistribution_allowed": false
+    },
+    "dfdc": {
+      "spdx_or_name": "Meta DFDC Dataset License",
+      "commercial_allowed": false,
+      "gated": true,
+      "attribution_required": true,
+      "redistribution_allowed": false
+    },
+    "asvspoof2021": {
+      "spdx_or_name": "ODC-By / Challenge Conditions",
+      "commercial_allowed": "review_required",
+      "gated": false,
+      "attribution_required": true,
+      "redistribution_allowed": false
+    },
+    "meld": {
+      "spdx_or_name": "GPL-3.0 (metadata) + Third-Party Media",
+      "commercial_allowed": false,
+      "gated": false,
+      "attribution_required": true,
+      "redistribution_allowed": false
+    },
+    "ravdess": {
+      "spdx_or_name": "CC BY-NC-SA 4.0",
+      "commercial_allowed": false,
+      "gated": false,
+      "attribution_required": true,
+      "redistribution_allowed": false
+    },
+    "crema_d": {
+      "spdx_or_name": "ODbL 1.0 / DbCL 1.0",
+      "commercial_allowed": "review_required",
+      "gated": true,
+      "attribution_required": true,
+      "redistribution_allowed": false
+    },
+    "core50": {
+      "spdx_or_name": "CC BY 4.0",
+      "commercial_allowed": true,
+      "gated": false,
+      "attribution_required": true,
+      "redistribution_allowed": false
+    },
+    "cifar10": {
+      "spdx_or_name": "CIFAR Research Attribution",
+      "commercial_allowed": "review_required",
+      "gated": false,
+      "attribution_required": true,
+      "redistribution_allowed": false
+    },
+    "cifar100": {
+      "spdx_or_name": "CIFAR Research Attribution",
+      "commercial_allowed": "review_required",
+      "gated": false,
+      "attribution_required": true,
+      "redistribution_allowed": false
+    },
+    "mu_bench": {
+      "spdx_or_name": "Apache-2.0 / MIT (code) + Per-Task Dataset Licences",
+      "commercial_allowed": "review_required",
+      "gated": false,
+      "attribution_required": true,
+      "redistribution_allowed": false
+    },
+    "tofu": {
+      "spdx_or_name": "MIT",
+      "commercial_allowed": true,
+      "gated": false,
+      "attribution_required": true,
+      "redistribution_allowed": false
+    }
+  }
+}

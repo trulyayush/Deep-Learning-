@@ -1,0 +1,36 @@
+{
+  "dataset_id": "asvspoof2021",
+  "name": "ASVspoof 2021",
+  "official_website": "https://www.asvspoof.org/index2021.html",
+  "licence": "ODC-By / Challenge Evaluation Conditions",
+  "commercial_eligible": false,
+  "subset_strategy": "Auto-fetch official LA/DF protocol & key archives (~47 MB); require --confirm-large for 8.0 GiB DF eval part00 audio archive.",
+  "last_acquisition": {
+    "dataset_id": "asvspoof2021",
+    "status": "DOWNLOADED",
+    "partial_subset_only": true,
+    "artifacts": [
+      {
+        "file": "datasets/raw/deepfake/asvspoof/archives/LA-keys-full.tar.gz",
+        "url": "https://www.asvspoof.org/asvspoof2021/LA-keys-full.tar.gz",
+        "status": "downloaded",
+        "bytes": 21235082,
+        "attempts": 1,
+        "md5_verified": false,
+        "timestamp": "2026-11-21T18:33:12Z"
+      },
+      {
+        "file": "datasets/raw/deepfake/asvspoof/archives/DF-keys-full.tar.gz",
+        "url": "https://www.asvspoof.org/asvspoof2021/DF-keys-full.tar.gz",
+        "status": "downloaded",
+        "bytes": 25985925,
+        "attempts": 1,
+        "md5_verified": false,
+        "timestamp": "2026-11-21T18:33:31Z"
+      }
+    ],
+    "extracted_files": 17,
+    "storage_free_after": "187.71 GiB",
+    "timestamp": "2026-11-21T18:33:32Z"
+  }
+}

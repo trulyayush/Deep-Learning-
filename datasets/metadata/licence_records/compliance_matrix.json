@@ -1,0 +1,25 @@
+{
+  "generated_at": "2026-11-21T18:33:00Z",
+  "commercial_eligible_after_review": [
+    "core50",
+    "tofu",
+    "asvspoof2021",
+    "cifar10",
+    "cifar100"
+  ],
+  "strictly_non_commercial_or_gated": [
+    "av_deepfake1m",
+    "fakeavceleb",
+    "faceforensics",
+    "dfdc",
+    "meld",
+    "ravdess",
+    "crema_d",
+    "mu_bench"
+  ],
+  "notes": [
+    "Public access does not imply unrestricted commercial permission.",
+    "Original raw dataset files remain unmodified and separate from derived/processed artifacts.",
+    "Restricted datasets require explicit upstream human registration and approval."
+  ]
+}

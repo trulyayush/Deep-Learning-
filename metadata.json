@@ -1,0 +1,6 @@
+{
+  "name": "ECHO-MIND",
+  "description": "Adaptive Multimodal Intelligence Platform combining deepfake forensics, conversational emotion intelligence, continual learning, and selective machine unlearning.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,99 @@
+{
+  "dataset_id": "tofu",
+  "name": "TOFU (Task of Fictitious Unlearning)",
+  "official_website": "https://huggingface.co/datasets/locuslab/TOFU",
+  "licence": "MIT",
+  "commercial_eligible": true,
+  "subset_strategy": "Download official forget/retain/holdout JSON splits (~1.5 MiB); keep text unlearning separate from AV unlearning.",
+  "last_acquisition": {
+    "dataset_id": "tofu",
+    "status": "DOWNLOADED",
+    "partial_subset_only": false,
+    "artifacts": [
+      {
+        "file": "datasets/raw/unlearning/tofu/forget01.json",
+        "url": "https://huggingface.co/datasets/locuslab/TOFU/resolve/main/forget01.json",
+        "status": "downloaded",
+        "bytes": 11655,
+        "attempts": 1,
+        "md5_verified": false,
+        "timestamp": "2026-11-21T18:40:17Z"
+      },
+      {
+        "file": "datasets/raw/unlearning/tofu/forget05.json",
+        "url": "https://huggingface.co/datasets/locuslab/TOFU/resolve/main/forget05.json",
+        "status": "downloaded",
+        "bytes": 56437,
+        "attempts": 1,
+        "md5_verified": false,
+        "timestamp": "2026-11-21T18:40:17Z"
+      },
+      {
+        "file": "datasets/raw/unlearning/tofu/forget10.json",
+        "url": "https://huggingface.co/datasets/locuslab/TOFU/resolve/main/forget10.json",
+        "status": "downloaded",
+        "bytes": 114856,
+        "attempts": 1,
+        "md5_verified": false,
+        "timestamp": "2026-11-21T18:40:18Z"
+      },
+      {
+        "file": "datasets/raw/unlearning/tofu/retain90.json",
+        "url": "https://huggingface.co/datasets/locuslab/TOFU/resolve/main/retain90.json",
+        "status": "downloaded",
+        "bytes": 962987,
+        "attempts": 1,
+        "md5_verified": false,
+        "timestamp": "2026-11-21T18:40:19Z"
+      },
+      {
+        "file": "datasets/raw/unlearning/tofu/retain95.json",
+        "url": "https://huggingface.co/datasets/locuslab/TOFU/resolve/main/retain95.json",
+        "status": "downloaded",
+        "bytes": 1021406,
+        "attempts": 1,
+        "md5_verified": false,
+        "timestamp": "2026-11-21T18:40:20Z"
+      },
+      {
+        "file": "datasets/raw/unlearning/tofu/retain99.json",
+        "url": "https://huggingface.co/datasets/locuslab/TOFU/resolve/main/retain99.json",
+        "status": "downloaded",
+        "bytes": 1066188,
+        "attempts": 1,
+        "md5_verified": false,
+        "timestamp": "2026-11-21T18:40:20Z"
+      },
+      {
+        "file": "datasets/raw/unlearning/tofu/holdout01.json",
+        "url": "https://huggingface.co/datasets/locuslab/TOFU/resolve/main/holdout01.json",
+        "status": "downloaded",
+        "bytes": 12263,
+        "attempts": 1,
+        "md5_verified": false,
+        "timestamp": "2026-11-21T18:40:21Z"
+      },
+      {
+        "file": "datasets/raw/unlearning/tofu/holdout05.json",
+        "url": "https://huggingface.co/datasets/locuslab/TOFU/resolve/main/holdout05.json",
+        "status": "downloaded",
+        "bytes": 64327,
+        "attempts": 1,
+        "md5_verified": false,
+        "timestamp": "2026-11-21T18:40:22Z"
+      },
+      {
+        "file": "datasets/raw/unlearning/tofu/holdout10.json",
+        "url": "https://huggingface.co/datasets/locuslab/TOFU/resolve/main/holdout10.json",
+        "status": "downloaded",
+        "bytes": 131049,
+        "attempts": 1,
+        "md5_verified": false,
+        "timestamp": "2026-11-21T18:40:22Z"
+      }
+    ],
+    "extracted_files": 0,
+    "storage_free_after": "186.11 GiB",
+    "timestamp": "2026-11-21T18:40:22Z"
+  }
+}

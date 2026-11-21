@@ -1,0 +1,361 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-11-21T18:30:00Z",
+  "sources": {
+    "av_deepfake1m": {
+      "dataset_id": "av_deepfake1m",
+      "official_website": "https://huggingface.co/datasets/ControlNet/AV-Deepfake1M",
+      "github_source": "https://github.com/ControlNet/AV-Deepfake1M",
+      "huggingface_source": "https://huggingface.co/datasets/ControlNet/AV-Deepfake1M",
+      "download_urls": [
+        "https://huggingface.co/datasets/ControlNet/AV-Deepfake1M"
+      ],
+      "access_gate": "Hugging Face manual approval required (gated: manual)",
+      "estimated_full_size_bytes": 433791696896,
+      "subset_strategy": "Metadata + README/terms first; selective test split shards (test/test.zip.001..005) only after HF token & gated approval."
+    },
+    "fakeavceleb": {
+      "dataset_id": "fakeavceleb",
+      "official_website": "https://github.com/DASH-Lab/FakeAVCeleb",
+      "github_source": "https://github.com/DASH-Lab/FakeAVCeleb",
+      "huggingface_source": null,
+      "access_request_url": "https://docs.google.com/forms/d/e/1FAIpQLSfPDd3oV0auqmmWEgCSaTEQ6CGpFeB-ozQJ35x-B_0Xjd93bw/viewform",
+      "download_urls": [
+        "https://github.com/DASH-Lab/FakeAVCeleb"
+      ],
+      "access_gate": "Official Google Form access request and maintainer approval required",
+      "estimated_full_size_bytes": 21474836480,
+      "subset_strategy": "Use official FakeAVCeleb download script after maintainer approval."
+    },
+    "faceforensics": {
+      "dataset_id": "faceforensics",
+      "official_website": "https://github.com/ondyari/FaceForensics",
+      "github_source": "https://github.com/ondyari/FaceForensics",
+      "huggingface_source": null,
+      "access_request_url": "https://docs.google.com/forms/d/e/1FAIpQLSdRRR3L5zAv6tQ_CxmK4W96tAab_pfBu2EKAgQbeDVhmXagg/viewform",
+      "download_urls": [
+        "https://github.com/ondyari/FaceForensics"
+      ],
+      "access_gate": "Official Google Form approval + maintainer-provided download.py script required",
+      "estimated_full_size_bytes": 536870912000,
+      "subset_strategy": "Request c23 compressed subset (Deepfakes, Face2Face, FaceSwap, NeuralTextures + masks) via official script."
+    },
+    "dfdc": {
+      "dataset_id": "dfdc",
+      "official_website": "https://ai.meta.com/datasets/dfdc/",
+      "github_source": "https://github.com/facebookresearch/dfdc",
+      "huggingface_source": null,
+      "kaggle_source": "https://www.kaggle.com/c/DeepFake-detection-challenge",
+      "download_urls": [
+        "https://www.kaggle.com/c/DeepFake-detection-challenge"
+      ],
+      "access_gate": "Meta DFDC / Kaggle competition agreement & authenticated Kaggle/AWS credentials required",
+      "estimated_preview_size_bytes": 8589934592,
+      "estimated_full_size_bytes": 504658657280,
+      "subset_strategy": "Start strictly with DFDC Preview (~5,000 videos, ~8 GB); do not pull full ~470 GB dataset without explicit confirmation."
+    },
+    "asvspoof2021": {
+      "dataset_id": "asvspoof2021",
+      "official_website": "https://www.asvspoof.org/index2021.html",
+      "github_source": "https://github.com/asvspoof-challenge/2021",
+      "huggingface_source": null,
+      "zenodo_record": "https://zenodo.org/records/4835108",
+      "download_urls": [
+        "https://www.asvspoof.org/asvspoof2021/LA-keys-full.tar.gz",
+        "https://www.asvspoof.org/asvspoof2021/DF-keys-full.tar.gz",
+        "https://zenodo.org/records/4835108/files/ASVspoof2021_DF_eval_part00.tar.gz?download=1"
+      ],
+      "artifacts": [
+        {
+          "name": "LA-keys-full.tar.gz",
+          "url": "https://www.asvspoof.org/asvspoof2021/LA-keys-full.tar.gz",
+          "size_bytes": 21235082,
+          "role": "protocol_keys",
+          "auto_download": true
+        },
+        {
+          "name": "DF-keys-full.tar.gz",
+          "url": "https://www.asvspoof.org/asvspoof2021/DF-keys-full.tar.gz",
+          "size_bytes": 25985925,
+          "role": "protocol_keys",
+          "auto_download": true
+        },
+        {
+          "name": "ASVspoof2021_DF_eval_part00.tar.gz",
+          "url": "https://zenodo.org/records/4835108/files/ASVspoof2021_DF_eval_part00.tar.gz?download=1",
+          "size_bytes": 8637050238,
+          "md5": "4f2cbae07cf3ede2a1dde3b8d2ee55ea",
+          "role": "eval_audio_subset",
+          "auto_download": false
+        }
+      ],
+      "access_gate": "Open public download via Zenodo & asvspoof.org",
+      "estimated_full_size_bytes": 34534483584,
+      "subset_strategy": "Auto-fetch official LA/DF protocol & key archives (~47 MB); require --confirm-large for 8.0 GiB DF eval part00 audio archive."
+    },
+    "meld": {
+      "dataset_id": "meld",
+      "official_website": "https://affective-meld.github.io/",
+      "github_source": "https://github.com/SenticNet/MELD",
+      "huggingface_source": "https://huggingface.co/datasets/declare-lab/MELD",
+      "download_urls": [
+        "https://web.eecs.umich.edu/~mihalcea/downloads/MELD.Raw.tar.gz",
+        "https://huggingface.co/datasets/declare-lab/MELD/resolve/main/MELD.Raw.tar.gz"
+      ],
+      "artifacts": [
+        {
+          "name": "train_sent_emo.csv",
+          "url": "https://raw.githubusercontent.com/declare-lab/MELD/master/data/MELD/train_sent_emo.csv",
+          "size_bytes": 1119290,
+          "role": "annotations_train",
+          "auto_download": true
+        },
+        {
+          "name": "dev_sent_emo.csv",
+          "url": "https://raw.githubusercontent.com/declare-lab/MELD/master/data/MELD/dev_sent_emo.csv",
+          "role": "annotations_dev",
+          "auto_download": true
+        },
+        {
+          "name": "test_sent_emo.csv",
+          "url": "https://raw.githubusercontent.com/declare-lab/MELD/master/data/MELD/test_sent_emo.csv",
+          "role": "annotations_test",
+          "auto_download": true
+        },
+        {
+          "name": "MELD.Raw.tar.gz",
+          "url": "https://huggingface.co/datasets/declare-lab/MELD/resolve/main/MELD.Raw.tar.gz",
+          "fallback_url": "https://web.eecs.umich.edu/~mihalcea/downloads/MELD.Raw.tar.gz",
+          "size_bytes": 10878146150,
+          "role": "raw_media_archive",
+          "auto_download": false
+        }
+      ],
+      "access_gate": "Open public access; 10.1 GiB raw media archive gated by large-download confirmation",
+      "estimated_full_size_bytes": 10878146150,
+      "subset_strategy": "Fetch official train/dev/test CSV dialogue annotations first; require --confirm-large for 10.1 GiB MELD.Raw.tar.gz."
+    },
+    "ravdess": {
+      "dataset_id": "ravdess",
+      "official_website": "https://smartlaboratory.org/resources/speech-song-database-ravdess/",
+      "github_source": null,
+      "huggingface_source": null,
+      "zenodo_record": "https://zenodo.org/records/1188976",
+      "download_urls": [
+        "https://zenodo.org/records/1188976/files/Audio_Speech_Actors_01-24.zip?download=1",
+        "https://zenodo.org/records/1188976/files/Audio_Song_Actors_01-24.zip?download=1"
+      ],
+      "artifacts": [
+        {
+          "name": "Audio_Speech_Actors_01-24.zip",
+          "url": "https://zenodo.org/records/1188976/files/Audio_Speech_Actors_01-24.zip?download=1",
+          "size_bytes": 208468073,
+          "md5": "bc696df654c87fed845eb13823edef8a",
+          "role": "audio_speech",
+          "auto_download": true
+        },
+        {
+          "name": "Audio_Song_Actors_01-24.zip",
+          "url": "https://zenodo.org/records/1188976/files/Audio_Song_Actors_01-24.zip?download=1",
+          "size_bytes": 225505317,
+          "md5": "5411230427d67a21e18aa4d466e6d1b9",
+          "role": "audio_song",
+          "auto_download": true
+        },
+        {
+          "name": "Video_Speech_Actor_01.zip",
+          "url": "https://zenodo.org/records/1188976/files/Video_Speech_Actor_01.zip?download=1",
+          "size_bytes": 552968353,
+          "md5": "3c8ececaf392b4a9b11b32271f4f6d01",
+          "role": "video_speech_sample_actor",
+          "auto_download": false
+        }
+      ],
+      "access_gate": "Open Zenodo download (CC BY-NC-SA 4.0)",
+      "estimated_full_size_bytes": 24800000000,
+      "subset_strategy": "Download complete Audio Speech + Audio Song archives (~414 MiB total, all 24 actors); actor video archives selectable on demand."
+    },
+    "crema_d": {
+      "dataset_id": "crema_d",
+      "official_website": "https://cheyneycomputerscience.github.io/CREMA-D/",
+      "github_source": "https://github.com/CheyneyComputerScience/CREMA-D",
+      "huggingface_source": null,
+      "access_request_url": "https://docs.google.com/forms/d/e/1FAIpQLSdvOR994_Hsx7OkBU3oCzluXcmxw2P1nr-zBxcPgVBNLdD9Eg/viewform",
+      "download_urls": [
+        "https://github.com/CheyneyComputerScience/CREMA-D",
+        "https://gitlab.com/cs-cooper-lab/crema-d-mirror"
+      ],
+      "access_gate": "Official access request form & Git LFS required for full media files",
+      "estimated_full_size_bytes": 7516192768,
+      "subset_strategy": "Record access requirement and Git LFS prerequisite; do not bypass form or download partial LFS pointers."
+    },
+    "core50": {
+      "dataset_id": "core50",
+      "official_website": "https://vlomonaco.github.io/core50/",
+      "github_source": "https://github.com/ContinualAI/avalanche",
+      "huggingface_source": null,
+      "download_urls": [
+        "http://bias.csr.unibo.it/maltoni/download/core50/core50_128x128.zip",
+        "https://github.com/vlomonaco/core50/archive/master.zip"
+      ],
+      "artifacts": [
+        {
+          "name": "core50-master.zip",
+          "url": "https://github.com/vlomonaco/core50/archive/master.zip",
+          "role": "benchmark_scripts_filelists",
+          "auto_download": true
+        },
+        {
+          "name": "core50_128x128.zip",
+          "url": "http://bias.csr.unibo.it/maltoni/download/core50/core50_128x128.zip",
+          "size_bytes": 5892103007,
+          "role": "rgb_128x128_archive",
+          "auto_download": false
+        }
+      ],
+      "access_gate": "Open academic download (CC BY 4.0); 5.49 GiB archive gated by large-download confirmation",
+      "estimated_full_size_bytes": 5892103007,
+      "subset_strategy": "Download official benchmark metadata/filelists first; require --confirm-large for 5.49 GiB core50_128x128.zip."
+    },
+    "cifar10": {
+      "dataset_id": "cifar10",
+      "official_website": "https://www.cs.toronto.edu/~kriz/cifar.html",
+      "github_source": null,
+      "huggingface_source": null,
+      "download_urls": [
+        "https://www.cs.toronto.edu/~kriz/cifar-10-python.tar.gz"
+      ],
+      "artifacts": [
+        {
+          "name": "cifar-10-python.tar.gz",
+          "url": "https://www.cs.toronto.edu/~kriz/cifar-10-python.tar.gz",
+          "size_bytes": 170498071,
+          "md5": "c58f30108f718f92721af3b95e74349a",
+          "role": "python_batches",
+          "auto_download": true
+        }
+      ],
+      "access_gate": "Open public download",
+      "estimated_full_size_bytes": 170498071,
+      "subset_strategy": "Download complete official Python tarball (~163 MiB)."
+    },
+    "cifar100": {
+      "dataset_id": "cifar100",
+      "official_website": "https://www.cs.toronto.edu/~kriz/cifar.html",
+      "github_source": null,
+      "huggingface_source": null,
+      "download_urls": [
+        "https://www.cs.toronto.edu/~kriz/cifar-100-python.tar.gz"
+      ],
+      "artifacts": [
+        {
+          "name": "cifar-100-python.tar.gz",
+          "url": "https://www.cs.toronto.edu/~kriz/cifar-100-python.tar.gz",
+          "size_bytes": 169001437,
+          "md5": "eb9058c3a382ffc7106e4002c42a8d85",
+          "role": "python_batches",
+          "auto_download": true
+        }
+      ],
+      "access_gate": "Open public download",
+      "estimated_full_size_bytes": 169001437,
+      "subset_strategy": "Download complete official Python tarball (~161 MiB)."
+    },
+    "mu_bench": {
+      "dataset_id": "mu_bench",
+      "official_website": "https://clu-uml.github.io/MU-Bench-Project-Page/",
+      "github_source": "https://github.com/CLU-UML/MU-Bench",
+      "huggingface_source": "https://huggingface.co/collections/jialicheng/benchmark-664a3dd153317bdff3d2fe45",
+      "download_urls": [
+        "https://github.com/CLU-UML/MU-Bench/archive/refs/heads/master.zip"
+      ],
+      "artifacts": [
+        {
+          "name": "MU-Bench-master.zip",
+          "url": "https://github.com/CLU-UML/MU-Bench/archive/refs/heads/master.zip",
+          "role": "benchmark_framework_splits",
+          "auto_download": true
+        }
+      ],
+      "access_gate": "Open repository & Hugging Face collection; selective task download only",
+      "estimated_full_size_bytes": 25000000,
+      "subset_strategy": "Download official MU-Bench splits/configs and link to local CIFAR-100 without duplicating raw CIFAR files."
+    },
+    "tofu": {
+      "dataset_id": "tofu",
+      "official_website": "https://huggingface.co/datasets/locuslab/TOFU",
+      "github_source": "https://github.com/locuslab/tofu",
+      "huggingface_source": "https://huggingface.co/datasets/locuslab/TOFU",
+      "download_urls": [
+        "https://huggingface.co/datasets/locuslab/TOFU/resolve/main/forget01.json",
+        "https://huggingface.co/datasets/locuslab/TOFU/resolve/main/forget05.json",
+        "https://huggingface.co/datasets/locuslab/TOFU/resolve/main/forget10.json",
+        "https://huggingface.co/datasets/locuslab/TOFU/resolve/main/retain90.json",
+        "https://huggingface.co/datasets/locuslab/TOFU/resolve/main/retain95.json",
+        "https://huggingface.co/datasets/locuslab/TOFU/resolve/main/retain99.json",
+        "https://huggingface.co/datasets/locuslab/TOFU/resolve/main/holdout01.json",
+        "https://huggingface.co/datasets/locuslab/TOFU/resolve/main/holdout05.json",
+        "https://huggingface.co/datasets/locuslab/TOFU/resolve/main/holdout10.json"
+      ],
+      "artifacts": [
+        {
+          "name": "forget01.json",
+          "url": "https://huggingface.co/datasets/locuslab/TOFU/resolve/main/forget01.json",
+          "role": "forget_split_1pct",
+          "auto_download": true
+        },
+        {
+          "name": "forget05.json",
+          "url": "https://huggingface.co/datasets/locuslab/TOFU/resolve/main/forget05.json",
+          "role": "forget_split_5pct",
+          "auto_download": true
+        },
+        {
+          "name": "forget10.json",
+          "url": "https://huggingface.co/datasets/locuslab/TOFU/resolve/main/forget10.json",
+          "role": "forget_split_10pct",
+          "auto_download": true
+        },
+        {
+          "name": "retain90.json",
+          "url": "https://huggingface.co/datasets/locuslab/TOFU/resolve/main/retain90.json",
+          "role": "retain_split_90pct",
+          "auto_download": true
+        },
+        {
+          "name": "retain95.json",
+          "url": "https://huggingface.co/datasets/locuslab/TOFU/resolve/main/retain95.json",
+          "role": "retain_split_95pct",
+          "auto_download": true
+        },
+        {
+          "name": "retain99.json",
+          "url": "https://huggingface.co/datasets/locuslab/TOFU/resolve/main/retain99.json",
+          "role": "retain_split_99pct",
+          "auto_download": true
+        },
+        {
+          "name": "holdout01.json",
+          "url": "https://huggingface.co/datasets/locuslab/TOFU/resolve/main/holdout01.json",
+          "role": "holdout_split_1pct",
+          "auto_download": true
+        },
+        {
+          "name": "holdout05.json",
+          "url": "https://huggingface.co/datasets/locuslab/TOFU/resolve/main/holdout05.json",
+          "role": "holdout_split_5pct",
+          "auto_download": true
+        },
+        {
+          "name": "holdout10.json",
+          "url": "https://huggingface.co/datasets/locuslab/TOFU/resolve/main/holdout10.json",
+          "role": "holdout_split_10pct",
+          "auto_download": true
+        }
+      ],
+      "access_gate": "Open public download (MIT)",
+      "estimated_full_size_bytes": 5000000,
+      "subset_strategy": "Download official forget/retain/holdout JSON splits (~1.5 MiB); keep text unlearning separate from AV unlearning."
+    }
+  }
+}

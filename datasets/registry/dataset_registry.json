@@ -1,0 +1,493 @@
+{
+  "schema_version": "1.0.0",
+  "platform": "ECHO-MIND",
+  "updated_at": "2026-11-21T18:40:30Z",
+  "supported_statuses": [
+    "NOT STARTED",
+    "ACCESS REQUIRED",
+    "REQUEST SUBMITTED",
+    "ACCESS APPROVED",
+    "READY TO DOWNLOAD",
+    "DOWNLOADING",
+    "DOWNLOADED",
+    "EXTRACTED",
+    "VALIDATING",
+    "VALIDATED",
+    "READY",
+    "FAILED",
+    "ACCESS DENIED"
+  ],
+  "datasets": [
+    {
+      "dataset_id": "av_deepfake1m",
+      "name": "AV-Deepfake1M",
+      "category": "deepfake_forensics",
+      "module": "Module 01 \u2014 Multimodal Deepfake Forensics",
+      "priority": "High",
+      "official_website": "https://huggingface.co/datasets/ControlNet/AV-Deepfake1M",
+      "official_download_url": "https://huggingface.co/datasets/ControlNet/AV-Deepfake1M",
+      "github_source": "https://github.com/ControlNet/AV-Deepfake1M",
+      "huggingface_source": "https://huggingface.co/datasets/ControlNet/AV-Deepfake1M",
+      "required_access_permissions": "Hugging Face account + manual gated access approval + terms acceptance",
+      "licence": "CC BY-NC 4.0",
+      "commercial_eligible": false,
+      "dataset_size_bytes": 433791696896,
+      "dataset_size_human": "~404 GiB (full)",
+      "estimated_extracted_bytes": 460000000000,
+      "modalities": [
+        "video",
+        "audio",
+        "segment_annotations"
+      ],
+      "labels": [
+        "Real",
+        "Visual-Fake",
+        "Audio-Fake",
+        "Audio-Visual-Fake"
+      ],
+      "original_splits": [
+        "train",
+        "val",
+        "test"
+      ],
+      "storage_destination": "datasets/raw/deepfake/av_deepfake1m",
+      "download_status": "ACCESS REQUIRED",
+      "extraction_status": "NOT STARTED",
+      "validation_status": "NOT STARTED"
+    },
+    {
+      "dataset_id": "fakeavceleb",
+      "name": "FakeAVCeleb",
+      "category": "deepfake_forensics",
+      "module": "Module 01 \u2014 Multimodal Deepfake Forensics",
+      "priority": "Very High",
+      "official_website": "https://github.com/DASH-Lab/FakeAVCeleb",
+      "official_download_url": "https://docs.google.com/forms/d/e/1FAIpQLSfPDd3oV0auqmmWEgCSaTEQ6CGpFeB-ozQJ35x-B_0Xjd93bw/viewform",
+      "github_source": "https://github.com/DASH-Lab/FakeAVCeleb",
+      "huggingface_source": null,
+      "required_access_permissions": "Google Form access request + maintainer approval",
+      "licence": "Research-Only (Rights-Clearing Limitations)",
+      "commercial_eligible": false,
+      "dataset_size_bytes": 21474836480,
+      "dataset_size_human": "~20 GiB",
+      "estimated_extracted_bytes": 24000000000,
+      "modalities": [
+        "video",
+        "audio"
+      ],
+      "labels": [
+        "RealVideo-RealAudio",
+        "FakeVideo-RealAudio",
+        "RealVideo-FakeAudio",
+        "FakeVideo-FakeAudio"
+      ],
+      "original_splits": [
+        "metadata_race_gender_splits"
+      ],
+      "storage_destination": "datasets/raw/deepfake/fakeavceleb",
+      "download_status": "ACCESS REQUIRED",
+      "extraction_status": "NOT STARTED",
+      "validation_status": "NOT STARTED"
+    },
+    {
+      "dataset_id": "faceforensics",
+      "name": "FaceForensics++",
+      "category": "deepfake_forensics",
+      "module": "Module 01 \u2014 Multimodal Deepfake Forensics",
+      "priority": "High",
+      "official_website": "https://github.com/ondyari/FaceForensics",
+      "official_download_url": "https://docs.google.com/forms/d/e/1FAIpQLSdRRR3L5zAv6tQ_CxmK4W96tAab_pfBu2EKAgQbeDVhmXagg/viewform",
+      "github_source": "https://github.com/ondyari/FaceForensics",
+      "huggingface_source": null,
+      "required_access_permissions": "Google Form approval + official maintainer download script",
+      "licence": "FaceForensics++ Terms of Use (Research-Only)",
+      "commercial_eligible": false,
+      "dataset_size_bytes": 536870912000,
+      "dataset_size_human": "~500 GiB (raw) / ~35 GiB (c23 subset)",
+      "estimated_extracted_bytes": 40000000000,
+      "modalities": [
+        "video",
+        "manipulation_masks"
+      ],
+      "labels": [
+        "Original",
+        "Deepfakes",
+        "Face2Face",
+        "FaceSwap",
+        "NeuralTextures"
+      ],
+      "original_splits": [
+        "train",
+        "val",
+        "test"
+      ],
+      "storage_destination": "datasets/raw/deepfake/faceforensics",
+      "download_status": "ACCESS REQUIRED",
+      "extraction_status": "NOT STARTED",
+      "validation_status": "NOT STARTED"
+    },
+    {
+      "dataset_id": "dfdc",
+      "name": "DFDC (DeepFake Detection Challenge)",
+      "category": "deepfake_forensics",
+      "module": "Module 01 \u2014 Multimodal Deepfake Forensics",
+      "priority": "Medium",
+      "official_website": "https://ai.meta.com/datasets/dfdc/",
+      "official_download_url": "https://www.kaggle.com/c/DeepFake-detection-challenge",
+      "github_source": "https://github.com/facebookresearch/dfdc",
+      "huggingface_source": null,
+      "required_access_permissions": "Meta DFDC / Kaggle competition rules acceptance + authenticated CLI credentials",
+      "licence": "Meta DFDC Usage Conditions",
+      "commercial_eligible": false,
+      "dataset_size_bytes": 8589934592,
+      "dataset_size_human": "~8 GiB (Preview) / ~470 GiB (Full)",
+      "estimated_extracted_bytes": 10000000000,
+      "modalities": [
+        "video",
+        "audio"
+      ],
+      "labels": [
+        "REAL",
+        "FAKE"
+      ],
+      "original_splits": [
+        "train",
+        "validation",
+        "test"
+      ],
+      "storage_destination": "datasets/raw/deepfake/dfdc",
+      "download_status": "ACCESS REQUIRED",
+      "extraction_status": "NOT STARTED",
+      "validation_status": "NOT STARTED"
+    },
+    {
+      "dataset_id": "asvspoof2021",
+      "name": "ASVspoof 2021",
+      "category": "deepfake_forensics",
+      "module": "Module 01 \u2014 Multimodal Deepfake Forensics",
+      "priority": "High",
+      "official_website": "https://www.asvspoof.org/index2021.html",
+      "official_download_url": "https://zenodo.org/records/4835108",
+      "github_source": "https://github.com/asvspoof-challenge/2021",
+      "huggingface_source": null,
+      "required_access_permissions": "Public Zenodo & challenge archive access",
+      "licence": "ODC-By / Challenge Evaluation Conditions",
+      "commercial_eligible": false,
+      "dataset_size_bytes": 47221007,
+      "dataset_size_human": "45 MiB (LA+DF protocol keys) / 8.04 GiB (DF eval part00 subset)",
+      "estimated_extracted_bytes": 220000000,
+      "modalities": [
+        "audio",
+        "protocol_keys"
+      ],
+      "labels": [
+        "bonafide",
+        "spoof"
+      ],
+      "original_splits": [
+        "train",
+        "dev",
+        "eval"
+      ],
+      "storage_destination": "datasets/raw/deepfake/asvspoof",
+      "download_status": "DOWNLOADED",
+      "extraction_status": "EXTRACTED",
+      "validation_status": "NOT STARTED"
+    },
+    {
+      "dataset_id": "meld",
+      "name": "MELD (Multimodal EmotionLines Dataset)",
+      "category": "conversational_emotion",
+      "module": "Module 02 \u2014 Conversational Emotion Intelligence",
+      "priority": "Very High",
+      "official_website": "https://affective-meld.github.io/",
+      "official_download_url": "https://huggingface.co/datasets/declare-lab/MELD/resolve/main/MELD.Raw.tar.gz",
+      "github_source": "https://github.com/SenticNet/MELD",
+      "huggingface_source": "https://huggingface.co/datasets/declare-lab/MELD",
+      "required_access_permissions": "Open public access (large raw archive confirmation required for 10.1 GiB tar.gz)",
+      "licence": "GPL-3.0 (annotations) + Third-Party Broadcast Media Rights",
+      "commercial_eligible": false,
+      "dataset_size_bytes": 10878146150,
+      "dataset_size_human": "1.5 MiB (CSVs) / 10.13 GiB (MELD.Raw.tar.gz)",
+      "estimated_extracted_bytes": 12500000000,
+      "modalities": [
+        "video",
+        "audio",
+        "text"
+      ],
+      "labels": [
+        "neutral",
+        "joy",
+        "sadness",
+        "anger",
+        "fear",
+        "surprise",
+        "disgust"
+      ],
+      "original_splits": [
+        "train",
+        "dev",
+        "test"
+      ],
+      "storage_destination": "datasets/raw/emotion/meld",
+      "download_status": "DOWNLOADED",
+      "extraction_status": "NOT REQUIRED",
+      "validation_status": "NOT STARTED"
+    },
+    {
+      "dataset_id": "ravdess",
+      "name": "RAVDESS",
+      "category": "conversational_emotion",
+      "module": "Module 02 \u2014 Conversational Emotion Intelligence",
+      "priority": "High",
+      "official_website": "https://smartlaboratory.org/resources/speech-song-database-ravdess/",
+      "official_download_url": "https://zenodo.org/records/1188976",
+      "github_source": null,
+      "huggingface_source": null,
+      "required_access_permissions": "Open public Zenodo access",
+      "licence": "CC BY-NC-SA 4.0",
+      "commercial_eligible": false,
+      "dataset_size_bytes": 433973390,
+      "dataset_size_human": "414 MiB (Audio Speech + Song 24 actors) / ~24 GiB (full video)",
+      "estimated_extracted_bytes": 620000000,
+      "modalities": [
+        "audio",
+        "video"
+      ],
+      "labels": [
+        "neutral",
+        "calm",
+        "happy",
+        "sad",
+        "angry",
+        "fearful",
+        "disgust",
+        "surprised"
+      ],
+      "original_splits": [
+        "actor_independent_24_actors"
+      ],
+      "storage_destination": "datasets/raw/emotion/ravdess",
+      "download_status": "DOWNLOADED",
+      "extraction_status": "EXTRACTED",
+      "validation_status": "NOT STARTED"
+    },
+    {
+      "dataset_id": "crema_d",
+      "name": "CREMA-D",
+      "category": "conversational_emotion",
+      "module": "Module 02 \u2014 Conversational Emotion Intelligence",
+      "priority": "High",
+      "official_website": "https://cheyneycomputerscience.github.io/CREMA-D/",
+      "official_download_url": "https://docs.google.com/forms/d/e/1FAIpQLSdvOR994_Hsx7OkBU3oCzluXcmxw2P1nr-zBxcPgVBNLdD9Eg/viewform",
+      "github_source": "https://github.com/CheyneyComputerScience/CREMA-D",
+      "huggingface_source": null,
+      "required_access_permissions": "Official Google Form access submission + Git LFS installation required",
+      "licence": "ODbL 1.0 / DbCL 1.0",
+      "commercial_eligible": false,
+      "dataset_size_bytes": 7516192768,
+      "dataset_size_human": "~7.0 GiB (full WAV/MP3/Video via Git LFS)",
+      "estimated_extracted_bytes": 8000000000,
+      "modalities": [
+        "audio",
+        "video"
+      ],
+      "labels": [
+        "Anger",
+        "Disgust",
+        "Fear",
+        "Happy",
+        "Neutral",
+        "Sad"
+      ],
+      "original_splits": [
+        "91_actors_unsplit_actor_grouped"
+      ],
+      "storage_destination": "datasets/raw/emotion/crema_d",
+      "download_status": "ACCESS REQUIRED",
+      "extraction_status": "NOT STARTED",
+      "validation_status": "NOT STARTED"
+    },
+    {
+      "dataset_id": "core50",
+      "name": "CORe50",
+      "category": "continual_learning",
+      "module": "Module 03 \u2014 Continual Learning Engine",
+      "priority": "High",
+      "official_website": "https://vlomonaco.github.io/core50/",
+      "official_download_url": "http://bias.csr.unibo.it/maltoni/download/core50/core50_128x128.zip",
+      "github_source": "https://github.com/ContinualAI/avalanche",
+      "huggingface_source": null,
+      "required_access_permissions": "Open academic download (5.49 GiB archive gated by large-download confirmation)",
+      "licence": "CC BY 4.0",
+      "commercial_eligible": true,
+      "dataset_size_bytes": 5892103007,
+      "dataset_size_human": "5.49 GiB (128x128 RGB) + benchmark scripts",
+      "estimated_extracted_bytes": 7200000000,
+      "modalities": [
+        "image_rgb"
+      ],
+      "labels": [
+        "50_objects_10_categories"
+      ],
+      "original_splits": [
+        "NC",
+        "NI",
+        "NIC_11_sessions"
+      ],
+      "storage_destination": "datasets/raw/continual_learning/core50",
+      "download_status": "DOWNLOADED",
+      "extraction_status": "EXTRACTED",
+      "validation_status": "NOT STARTED"
+    },
+    {
+      "dataset_id": "cifar10",
+      "name": "CIFAR-10",
+      "category": "continual_learning",
+      "module": "Module 03 \u2014 Continual Learning Engine",
+      "priority": "Very High",
+      "official_website": "https://www.cs.toronto.edu/~kriz/cifar.html",
+      "official_download_url": "https://www.cs.toronto.edu/~kriz/cifar-10-python.tar.gz",
+      "github_source": null,
+      "huggingface_source": null,
+      "required_access_permissions": "Open public download",
+      "licence": "CIFAR Research Attribution",
+      "commercial_eligible": false,
+      "dataset_size_bytes": 170498071,
+      "dataset_size_human": "162.6 MiB",
+      "estimated_extracted_bytes": 185000000,
+      "modalities": [
+        "image_rgb"
+      ],
+      "labels": [
+        "airplane",
+        "automobile",
+        "bird",
+        "cat",
+        "deer",
+        "dog",
+        "frog",
+        "horse",
+        "ship",
+        "truck"
+      ],
+      "original_splits": [
+        "train_50000",
+        "test_10000"
+      ],
+      "storage_destination": "datasets/raw/continual_learning/cifar10",
+      "download_status": "DOWNLOADING",
+      "extraction_status": "NOT STARTED",
+      "validation_status": "NOT STARTED"
+    },
+    {
+      "dataset_id": "cifar100",
+      "name": "CIFAR-100",
+      "category": "continual_learning",
+      "module": "Module 03 \u2014 Continual Learning Engine & Module 04 \u2014 Selective Machine Unlearning",
+      "priority": "Very High",
+      "official_website": "https://www.cs.toronto.edu/~kriz/cifar.html",
+      "official_download_url": "https://www.cs.toronto.edu/~kriz/cifar-100-python.tar.gz",
+      "github_source": null,
+      "huggingface_source": null,
+      "required_access_permissions": "Open public download",
+      "licence": "CIFAR Research Attribution",
+      "commercial_eligible": false,
+      "dataset_size_bytes": 169001437,
+      "dataset_size_human": "161.2 MiB",
+      "estimated_extracted_bytes": 185000000,
+      "modalities": [
+        "image_rgb"
+      ],
+      "labels": [
+        "100_fine_classes_20_superclasses"
+      ],
+      "original_splits": [
+        "train_50000",
+        "test_10000"
+      ],
+      "storage_destination": "datasets/raw/continual_learning/cifar100",
+      "download_status": "READY TO DOWNLOAD",
+      "extraction_status": "NOT STARTED",
+      "validation_status": "NOT STARTED"
+    },
+    {
+      "dataset_id": "mu_bench",
+      "name": "MU-Bench",
+      "category": "selective_unlearning",
+      "module": "Module 04 \u2014 Selective Machine Unlearning Engine",
+      "priority": "Very High",
+      "official_website": "https://clu-uml.github.io/MU-Bench-Project-Page/",
+      "official_download_url": "https://github.com/CLU-UML/MU-Bench/archive/refs/heads/master.zip",
+      "github_source": "https://github.com/CLU-UML/MU-Bench",
+      "huggingface_source": "https://huggingface.co/collections/jialicheng/benchmark-664a3dd153317bdff3d2fe45",
+      "required_access_permissions": "Open repository & selective task acquisition",
+      "licence": "Composite (Code Apache/MIT; Underlying datasets per task)",
+      "commercial_eligible": false,
+      "dataset_size_bytes": 25000000,
+      "dataset_size_human": "~25 MiB (framework & task split definitions; links local CIFAR-100)",
+      "estimated_extracted_bytes": 40000000,
+      "modalities": [
+        "multimodal_benchmark_configs",
+        "vision_text_speech_tasks"
+      ],
+      "labels": [
+        "forget_set",
+        "retain_set"
+      ],
+      "original_splits": [
+        "forget",
+        "retain",
+        "test"
+      ],
+      "storage_destination": "datasets/raw/unlearning/mu_bench",
+      "download_status": "FAILED",
+      "extraction_status": "NOT STARTED",
+      "validation_status": "NOT STARTED"
+    },
+    {
+      "dataset_id": "tofu",
+      "name": "TOFU (Task of Fictitious Unlearning)",
+      "category": "selective_unlearning",
+      "module": "Module 04 \u2014 Selective Machine Unlearning Engine (Optional Text Track)",
+      "priority": "Optional",
+      "official_website": "https://huggingface.co/datasets/locuslab/TOFU",
+      "official_download_url": "https://huggingface.co/datasets/locuslab/TOFU",
+      "github_source": "https://github.com/locuslab/tofu",
+      "huggingface_source": "https://huggingface.co/datasets/locuslab/TOFU",
+      "required_access_permissions": "Open public Hugging Face download",
+      "licence": "MIT",
+      "commercial_eligible": true,
+      "dataset_size_bytes": 5000000,
+      "dataset_size_human": "~5 MiB (JSON forget/retain/holdout splits)",
+      "estimated_extracted_bytes": 8000000,
+      "modalities": [
+        "text"
+      ],
+      "labels": [
+        "forget01",
+        "forget05",
+        "forget10",
+        "retain90",
+        "retain95",
+        "retain99",
+        "holdout"
+      ],
+      "original_splits": [
+        "forget01",
+        "forget05",
+        "forget10",
+        "retain90",
+        "retain95",
+        "retain99",
+        "holdout01",
+        "holdout05",
+        "holdout10"
+      ],
+      "storage_destination": "datasets/raw/unlearning/tofu",
+      "download_status": "DOWNLOADED",
+      "extraction_status": "NOT REQUIRED",
+      "validation_status": "NOT STARTED"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+node_modules/
+build/
+dist/
+coverage/
+.DS_Store
+*.log
+.env*
+!.env.example
+datasets/raw/
+datasets/processed/
+datasets/cache/
+datasets/logs/
+
